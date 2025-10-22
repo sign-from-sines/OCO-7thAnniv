@@ -3,14 +3,16 @@
 <html lang="ja">
     <head>
         <meta charset="Shift-JIS" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="keywords" content="HTML,CSS,JavaScript,JQuery" />
         <meta name="description" content="OCO 7th Special Website" />
         <title>OCO7周年記念サイト</title>
-
+        <link rel="shortcut icon" href="TemplateData/favicon.ico">
+        <link rel="stylesheet" href="TemplateData/style.css">
+    
     </head>
     <body>
         test
-        <br>
         <div id="unity-container" class="unity-desktop">
           <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
           <div id="unity-loading-bar">
@@ -26,8 +28,8 @@
             <div id="unity-build-title">OCO7thProject</div>
           </div>
         </div>
-        
         <script>
+    
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
             var loadingBar = document.querySelector("#unity-loading-bar");
