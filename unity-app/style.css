@@ -1,0 +1,30 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#unity-iframe {
+    border: none;
+    display: block;
+    
+    /* 最大幅：ビューポート幅全体 (100vw) に合わせた高さ (56.25vw) */
+    width: 100vw;
+    height: 56.25vw;
+
+    /* 縦長ウィンドウで高さが制限される場合の設定 */
+    max-height: 100vh;
+    max-width: 177.78vh;
+
+    /* 最終的なアスペクト比の固定 */
+    aspect-ratio: 16 / 9;
+}
